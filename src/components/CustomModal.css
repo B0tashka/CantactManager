@@ -1,0 +1,100 @@
+.modalBackground {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  padding: 20px;
+  width:80%;
+  max-width: 600px;
+  max-height: 70%;
+  transition: 0.5s;
+  border: 6px solid #5F8D4E;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  overflow: auto;
+  animation: scale 0.5s ease;
+  z-index: 4;
+  pointer-events: auto;
+}
+
+/*.modalContainer {*/
+/*  !*background-color: #fff;*!*/
+/*  !*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);*!*/
+/*  !*padding: 20px;*!*/
+/*  !*border-radius: 10px;*!*/
+/*  !*max-width: 400px;*!*/
+/*  !*margin: 0 auto;*!*/
+/*}*/
+
+.modalContainer button {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 6px solid #5F8D4E;
+  border-radius: 12px;
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  right: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23337AB7' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3e%3cline x1='18' y1='6' x2='6' y2='18'%3e%3c/line%3e%3cline x1='6' y1='6' x2='18' y2='18'%3e%3c/line%3e%3c/svg%3e");
+  background-color: #FFF;
+  background-size: cover;
+  animation: move 0.5s ease;
+}
+.user-photo {
+  width: 100px; /* Adjust the width as desired */
+  height: 100px; /* Adjust the height as desired */
+  object-fit: cover; /* Adjust the object-fit property as desired */
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.modalContainer h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modalContainer img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.modalContainer h3,
+.modalContainer h4,
+.modalContainer p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes move {
+  0% {
+    right: -80px;
+  }
+  100% {
+    right: 20px;
+  }
+}
+@keyframes bg {
+  0% {
+    background: rgba(51, 122, 183, 0);
+  }
+  100% {
+    background: #181C32;
+  }
+}
+
+

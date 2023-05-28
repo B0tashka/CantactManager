@@ -1,0 +1,28 @@
+.form-label {
+    font-weight: bold;
+
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-check-input {
+    margin-right: 8px;
+}
+
+.btn-primary {
+    background-color: #5F8D4E;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
